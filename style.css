@@ -1,0 +1,80 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+.container {
+    display: grid;
+    max-width: 840px;
+    margin: auto;
+    height: 100vh;
+    grid-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1.6fr 1fr 1fr  0.2fr;
+    grid-template-areas: 
+    "header nav"
+    "main main"
+    "project project"
+    "skils skils"
+    "footer footer";
+}
+
+.container * {
+    padding-left: 5px;
+}
+
+header {
+    grid-area: header;
+}
+nav {
+    grid-area:nav;
+    text-align: right;
+    padding-right: 10px;
+}
+main {
+    grid-area: main;;
+    text-align: justify;
+}
+.picture {
+    grid-area: picture;
+    background-color: rgb(136, 236, 240);
+}
+.projects {
+    grid-area: project;
+    background-color: rgb(136, 236, 240);
+}
+.skils {
+    grid-area: skils;
+    background-color: rgb(136, 236, 240);
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(136, 236, 240);
+}
+
+h1 {
+    font-size: 1.3rem;
+    
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: none;
+    
+}
+main img {
+    width: 200px;
+    border-radius: 10%;
+    float: right;
+    margin: 20px 0 0 20px;
+}
+main p {
+    
+}
