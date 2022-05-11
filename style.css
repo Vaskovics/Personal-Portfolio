@@ -52,11 +52,12 @@ main {
 footer{
     grid-area: footer;
     text-align: center;
+    font-size: 0.8rem;
+    
 }
 
 h1 {
     font-size: 1.3rem;
-    
 }
 
 nav li {
@@ -72,7 +73,7 @@ nav li a {
 .projects li a {
     text-decoration: none;
     color: black;
-    font-weight: 500;
+    font-weight:bold;
 }
 
 a:link {
@@ -92,7 +93,7 @@ main img {
 }
 
 .skills img {
-    width: 60px;
+    width: 40px;
 }
 
 @media only screen and (max-width: 700px){
@@ -133,8 +134,13 @@ main img {
     footer {
         grid-area: footer;
     }
+    
+}
+.contact {
+    width: 50px;
+    float: left;
+}
 
-
-
+img {
     
 }
