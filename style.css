@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 * {
     font-family: "Open Sans", sans-serif;
 }
@@ -13,7 +17,7 @@
     "header nav"
     "main main"
     "project project"
-    "skils skils"
+    "skills skills"
     "footer footer";
 }
 
@@ -33,21 +37,21 @@ main {
     grid-area: main;;
     text-align: justify;
 }
-.picture {
-    grid-area: picture;
-    background-color: rgb(136, 236, 240);
-}
+
+
 .projects {
     grid-area: project;
-    background-color: rgb(136, 236, 240);
 }
-.skils {
-    grid-area: skils;
-    background-color: rgb(136, 236, 240);
+.skills {
+    display: flex;
+    align-items: center;
+    grid-area: skills;
+    
+    flex-wrap: wrap;
 }
 footer{
     grid-area: footer;
-    background-color: rgb(136, 236, 240);
+    text-align: center;
 }
 
 h1 {
@@ -59,7 +63,18 @@ nav li {
     list-style-type: none;
     display: inline;
     text-decoration: none;
+    
 }
+nav li a {
+    color: black;
+}
+
+.projects li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
 a:link {
     text-decoration: none;
     color: black;
@@ -70,11 +85,56 @@ a:hover {
     
 }
 main img {
-    width: 200px;
+    width: 250px;
     border-radius: 10%;
     float: right;
     margin: 20px 0 0 20px;
 }
-main p {
+
+.skills img {
+    width: 60px;
+}
+
+@media only screen and (max-width: 700px){
+    .container {
+        display: grid;
+        margin: auto;
+        grid-gap: 2px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 1.6fr 1fr 0.5fr 0.2fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "skills"
+        "projects"
+        "footer"
+        }
+
+    header {
+        grid-area: header;
+        text-align: center;
+    }
+    nav {
+        grid-area: nav;
+        text-align: center;
+    }
+    main {
+        grid-area: main;
+
+    }
+    .skills {
+        grid-area: skills;
+
+    }
+    .projects {
+        grid-area: projects;
+    }
+    footer {
+        grid-area: footer;
+    }
+
+
+
     
 }
